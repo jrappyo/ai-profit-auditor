@@ -1,6 +1,6 @@
 # AI Feature Profitability Audit
 
-A lightweight framework and CLI tool for product engineers to evaluate the unit economics of proposed AI features using the **3x Value Rule**.
+A lightweight framework, skills and CLI tool for product engineers to evaluate the unit economics of proposed AI features using the **3x Value Rule**.
 
 ## The Problem
 Traditional SaaS models operate on high gross margins (typically 80% or more) because the marginal cost of a new user is near zero. Generative AI features break this model. Every user prompt incurs a direct Cost of Goods Sold (COGS) in the form of compute tokens. Without strict operational discipline, AI features can easily destroy product margins.
