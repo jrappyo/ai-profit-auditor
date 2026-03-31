@@ -17,14 +17,26 @@ Where:
 
 A ratio of R >= 3.0 indicates a viable, scalable product feature.
 
+## Repository Layout
+```
+├── README.md          — this file
+├── prd.md             — product requirements and design rationale
+├── skill/             — Claude Code skill (install via /ai-profit-auditor)
+│   ├── ai-profit-auditor.md
+│   └── ai-profit-auditor.skill
+└── cli/               — standalone Python CLI tool + tests
+    ├── ai_profit_audit.py
+    └── test_ai_profit_audit.py
+```
+
 ## Usage
 Run the Python script from your terminal to audit a feature during planning or grooming sessions.
 
 ### Basic Command
-`python ai_profit_audit.py`
+`python cli/ai_profit_audit.py`
 
 ### Advanced Command (Custom Variables)
-`python ai_profit_audit.py --pin 2.50 --pout 10.00 --tavg 4000 --vhuman 75.00 --msaved 10.0`
+`python cli/ai_profit_audit.py --pin 2.50 --pout 10.00 --tavg 4000 --vhuman 75.00 --msaved 10.0`
 
 ### Arguments
 * `--pin`: Cost per 1M Input Tokens (USD). Default is 5.00.
